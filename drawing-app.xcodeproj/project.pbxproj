@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E67DE722DA7618300C180A1 /* drawing_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67DE712DA7618300C180A1 /* drawing_appApp.swift */; };
 		5E67DE742DA7618300C180A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67DE732DA7618300C180A1 /* ContentView.swift */; };
 		5E67DE762DA7618500C180A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E67DE752DA7618500C180A1 /* Assets.xcassets */; };
-		5E67DE792DA7618500C180A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E67DE782DA7618500C180A1 /* Preview Assets.xcassets */; };
+		5E67DEA62DA7647B00C180A1 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */; };
+		5E67DEA72DA7647B00C180A1 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +28,50 @@
 			remoteGlobalIDString = 5E67DE6D2DA7618300C180A1;
 			remoteInfo = "drawing-app";
 		};
+		5E67DEA12DA7643D00C180A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		5E67DEA32DA7643D00C180A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		5E67DEA92DA7649200C180A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E67DEA82DA7647B00C180A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E67DEA72DA7647B00C180A1 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E67DE6E2DA7618300C180A1 /* drawing-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drawing-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E67DE712DA7618300C180A1 /* drawing_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawing_appApp.swift; sourceTree = "<group>"; };
 		5E67DE732DA7618300C180A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E67DE752DA7618500C180A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E67DE782DA7618500C180A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E67DE7E2DA7618500C180A1 /* drawing-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drawing-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E67DE882DA7618500C180A1 /* drawing-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drawing-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ResearchKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E67DEA62DA7647B00C180A1 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +103,10 @@
 		5E67DE652DA7618300C180A1 = {
 			isa = PBXGroup;
 			children = (
+				5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */,
 				5E67DE702DA7618300C180A1 /* drawing-app */,
 				5E67DE6F2DA7618300C180A1 /* Products */,
+				5E67DEA52DA7647B00C180A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,20 +123,26 @@
 		5E67DE702DA7618300C180A1 /* drawing-app */ = {
 			isa = PBXGroup;
 			children = (
-				5E67DE712DA7618300C180A1 /* drawing_appApp.swift */,
 				5E67DE732DA7618300C180A1 /* ContentView.swift */,
 				5E67DE752DA7618500C180A1 /* Assets.xcassets */,
-				5E67DE772DA7618500C180A1 /* Preview Content */,
 			);
 			path = "drawing-app";
 			sourceTree = "<group>";
 		};
-		5E67DE772DA7618500C180A1 /* Preview Content */ = {
+		5E67DE9C2DA7643D00C180A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E67DE782DA7618500C180A1 /* Preview Assets.xcassets */,
+				5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */,
+				5E67DEA42DA7643D00C180A1 /* ResearchKitTests.xctest */,
 			);
-			path = "Preview Content";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E67DEA52DA7647B00C180A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,10 +155,12 @@
 				5E67DE6A2DA7618300C180A1 /* Sources */,
 				5E67DE6B2DA7618300C180A1 /* Frameworks */,
 				5E67DE6C2DA7618300C180A1 /* Resources */,
+				5E67DEA82DA7647B00C180A1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E67DEAA2DA7649200C180A1 /* PBXTargetDependency */,
 			);
 			name = "drawing-app";
 			productName = "drawing-app";
@@ -192,6 +237,12 @@
 			mainGroup = 5E67DE652DA7618300C180A1;
 			productRefGroup = 5E67DE6F2DA7618300C180A1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5E67DE9C2DA7643D00C180A1 /* Products */;
+					ProjectRef = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5E67DE6D2DA7618300C180A1 /* drawing-app */,
@@ -201,12 +252,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 5E67DEA12DA7643D00C180A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E67DEA42DA7643D00C180A1 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 5E67DEA32DA7643D00C180A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		5E67DE6C2DA7618300C180A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E67DE792DA7618500C180A1 /* Preview Assets.xcassets in Resources */,
 				5E67DE762DA7618500C180A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E67DE742DA7618300C180A1 /* ContentView.swift in Sources */,
-				5E67DE722DA7618300C180A1 /* drawing_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = 5E67DE6D2DA7618300C180A1 /* drawing-app */;
 			targetProxy = 5E67DE892DA7618500C180A1 /* PBXContainerItemProxy */;
+		};
+		5E67DEAA2DA7649200C180A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 5E67DEA92DA7649200C180A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
