@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E67DE742DA7618300C180A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67DE732DA7618300C180A1 /* ContentView.swift */; };
 		5E67DE762DA7618500C180A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E67DE752DA7618500C180A1 /* Assets.xcassets */; };
-		5E67DEA62DA7647B00C180A1 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */; };
-		5E67DEA72DA7647B00C180A1 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E67DEBA2DA76CD300C180A1 /* drawing_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67DEB72DA76CD300C180A1 /* drawing_app.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,26 +27,33 @@
 			remoteGlobalIDString = 5E67DE6D2DA7618300C180A1;
 			remoteInfo = "drawing-app";
 		};
-		5E67DEA12DA7643D00C180A1 /* PBXContainerItemProxy */ = {
+		5EB254682DA8B8BE00D080A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+			containerPortal = 5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		5E67DEA32DA7643D00C180A1 /* PBXContainerItemProxy */ = {
+		5EB2546A2DA8B8BE00D080A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+			containerPortal = 5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
 		};
-		5E67DEA92DA7649200C180A1 /* PBXContainerItemProxy */ = {
+		5EB2546C2DA8B8BE00D080A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B183A4731A8535D100C76870;
-			remoteInfo = ResearchKit;
+			containerPortal = 5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA1C7A5A288B0C68004DAB3A;
+			remoteInfo = ResearchKitUI;
+		};
+		5EB2546E2DA8B8BE00D080A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CAD08967289DD747007B2A98;
+			remoteInfo = ResearchKitActiveTask;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E67DEA72DA7647B00C180A1 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +76,8 @@
 		5E67DE752DA7618500C180A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E67DE7E2DA7618500C180A1 /* drawing-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drawing-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E67DE882DA7618500C180A1 /* drawing-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drawing-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		5E67DEB72DA76CD300C180A1 /* drawing_app.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawing_app.swift; sourceTree = "<group>"; };
+		5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../Downloads/ResearchKit-main/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E67DEA62DA7647B00C180A1 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +108,7 @@
 		5E67DE652DA7618300C180A1 = {
 			isa = PBXGroup;
 			children = (
-				5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */,
+				5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */,
 				5E67DE702DA7618300C180A1 /* drawing-app */,
 				5E67DE6F2DA7618300C180A1 /* Products */,
 				5E67DEA52DA7647B00C180A1 /* Frameworks */,
@@ -123,19 +128,11 @@
 		5E67DE702DA7618300C180A1 /* drawing-app */ = {
 			isa = PBXGroup;
 			children = (
+				5E67DEB72DA76CD300C180A1 /* drawing_app.swift */,
 				5E67DE732DA7618300C180A1 /* ContentView.swift */,
 				5E67DE752DA7618500C180A1 /* Assets.xcassets */,
 			);
 			path = "drawing-app";
-			sourceTree = "<group>";
-		};
-		5E67DE9C2DA7643D00C180A1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */,
-				5E67DEA42DA7643D00C180A1 /* ResearchKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5E67DEA52DA7647B00C180A1 /* Frameworks */ = {
@@ -143,6 +140,17 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EB254612DA8B8BE00D080A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EB254692DA8B8BE00D080A8 /* ResearchKit.framework */,
+				5EB2546B2DA8B8BE00D080A8 /* ResearchKitTests.xctest */,
+				5EB2546D2DA8B8BE00D080A8 /* ResearchKitUI.framework */,
+				5EB2546F2DA8B8BE00D080A8 /* ResearchKitActiveTask.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +168,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5E67DEAA2DA7649200C180A1 /* PBXTargetDependency */,
 			);
 			name = "drawing-app";
 			productName = "drawing-app";
@@ -235,12 +242,14 @@
 				Base,
 			);
 			mainGroup = 5E67DE652DA7618300C180A1;
+			packageReferences = (
+			);
 			productRefGroup = 5E67DE6F2DA7618300C180A1 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5E67DE9C2DA7643D00C180A1 /* Products */;
-					ProjectRef = 5E67DE9B2DA7643D00C180A1 /* ResearchKit.xcodeproj */;
+					ProductGroup = 5EB254612DA8B8BE00D080A8 /* Products */;
+					ProjectRef = 5EB254602DA8B8BE00D080A8 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -253,18 +262,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5E67DEA22DA7643D00C180A1 /* ResearchKit.framework */ = {
+		5EB254692DA8B8BE00D080A8 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 5E67DEA12DA7643D00C180A1 /* PBXContainerItemProxy */;
+			remoteRef = 5EB254682DA8B8BE00D080A8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5E67DEA42DA7643D00C180A1 /* ResearchKitTests.xctest */ = {
+		5EB2546B2DA8B8BE00D080A8 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 5E67DEA32DA7643D00C180A1 /* PBXContainerItemProxy */;
+			remoteRef = 5EB2546A2DA8B8BE00D080A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EB2546D2DA8B8BE00D080A8 /* ResearchKitUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKitUI.framework;
+			remoteRef = 5EB2546C2DA8B8BE00D080A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EB2546F2DA8B8BE00D080A8 /* ResearchKitActiveTask.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKitActiveTask.framework;
+			remoteRef = 5EB2546E2DA8B8BE00D080A8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -299,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E67DEBA2DA76CD300C180A1 /* drawing_app.swift in Sources */,
 				5E67DE742DA7618300C180A1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,11 +353,6 @@
 			isa = PBXTargetDependency;
 			target = 5E67DE6D2DA7618300C180A1 /* drawing-app */;
 			targetProxy = 5E67DE892DA7618500C180A1 /* PBXContainerItemProxy */;
-		};
-		5E67DEAA2DA7649200C180A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ResearchKit;
-			targetProxy = 5E67DEA92DA7649200C180A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -464,7 +483,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"drawing-app/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 459GWFP9R8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -493,7 +512,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"drawing-app/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 459GWFP9R8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
